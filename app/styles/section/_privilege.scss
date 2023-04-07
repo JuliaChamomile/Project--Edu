@@ -1,0 +1,88 @@
+.privilege {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: $main-white;
+
+    &__list{
+        display: flex;
+        padding-top: 80px;
+        padding-bottom: 86px;
+        justify-content: space-between;
+
+        &-icon {
+            margin-bottom: 23px;
+        }
+
+        &-item { 
+            list-style-type: none;
+            width: 70%;
+        }
+        &-title {
+            margin-bottom: 19px;
+            @include section-text($font-title, bold, 24px, 32px, none, $main-black, left)
+        }
+        &-subtitle {
+            margin-bottom: 16px;
+            width: 70%;
+            @include section-text($font-subtitle, normal, 18px, 32px, none, $main-rgb, left)
+        }
+
+        &-link {
+            display: flex;
+            text-decoration: none;
+        }
+        &-nav--text {
+            margin-right: 10px;
+
+            &:hover {
+                opacity: 0.5;
+                transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+            }
+
+            @include section-text($font-subtitle, normal, 18px, 32px, none, $main-black, left)
+        }
+    }
+}
+
+.arrow:hover {
+    opacity: 0.5;
+    transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+    transform: scale(1.3);
+}
+
+
+@media screen and(max-width:1200px) {
+    .privilege {
+        &__list{
+           padding-left: 35px; 
+        }
+    }
+}
+
+@media screen and(max-width:870px) {
+    .privilege {
+        .privilege {
+            &__list{
+               padding-left: 22px; 
+            }
+        }
+    }
+}
+
+@media screen and(max-width:560px) {
+    .privilege {
+        &__list {
+            display: block;
+            padding-left: 14px; 
+            &-item { 
+                width: 100%;
+                margin-bottom: 54px;
+            }
+            &-subtitle {
+                width: 80%;
+            }
+        }
+    }
+}

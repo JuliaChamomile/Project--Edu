@@ -1,0 +1,198 @@
+.header{
+        
+        position: relative;
+        background-color: $main-purple;
+        padding-top: 132px;
+
+        div.rotator-slide & {
+            &__rotator {
+              
+                &-img {
+                    width: 970px;
+                    height: 656px;
+                    border-radius: 70px;
+                }
+            }
+        &__rotator {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 96px;
+            position: relative;
+            z-index: 1;
+            &-img {
+                width: 970px;
+                height: 656px;
+                border-radius: 70px;
+            }
+        }
+    }
+        &__btn {
+            position: absolute;
+            top: 74px;
+            left: 200px;
+            z-index: 2;
+        }
+        &__block-list {
+            display: flex;
+            list-style-type: none;
+            position: absolute;
+            top: 76px;
+            right: 200px;
+        }
+        &__block-item {
+            margin-right: 8px;
+            z-index: 2;
+            &:hover {
+                opacity: 0.5;
+                transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+                transform: scale(1.1)
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    &__block-info {
+        display: block;
+        position: absolute;
+        bottom: 176px;
+        left: 200px;
+        z-index: 2;
+        &--title {
+            margin-bottom: 26px;
+            width: 70%;
+            @include section-text($font-title, bold, 72px, 80px, none, $main-white, left)
+        }
+        &--subtitle {
+            margin-bottom: 72px;
+            @include section-text($font-subtitle, normal, 22px, 32px, none, $main-white, left)
+        }
+        &--bt {
+            background: #95D354;
+            border-radius: 24px;
+            padding: 12px 31px;
+            @include section-text($font-subtitle, normal, 18px, 24px, none, $main-white, left)
+        }
+    }
+    &__block-play {
+        position: absolute;
+        bottom: 160px;
+        right: 200px;
+        z-index: 3;
+        &:hover {
+            opacity: 0.5;
+            transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+            transform: scale(1.1)
+        }
+    }
+    &__decor {
+        position: absolute;
+        bottom: 152px;
+        right: 0;
+        &--top {
+            position: absolute;
+            top: 150px;
+            left: 16px;
+        }
+    }
+    &__slide {
+        display: block;
+        position: absolute;
+        bottom: 157px;
+        left: 6px;
+        z-index: 1;
+
+        &-left{
+            margin-bottom: 16px;
+            &:hover {
+                opacity: 0.5;
+                transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+                transform: scale(1.1)
+            }
+        }
+        &-right {
+            &:hover {
+                opacity: 0.5;
+                transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+                transform: scale(1.1)
+            }
+        }
+    }
+}
+.owl-nav {
+    display: none;
+}
+
+
+
+@media screen and(max-width:1200px) {
+    .header {
+        div.rotator-slide & {
+            &__rotator {
+              
+                &-img {
+                    width: 896px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:870px) {
+    .header{
+        div.rotator-slide & {
+            &__rotator {
+              
+                &-img {
+                    width: 740px;
+                }
+            }
+        }
+        &__btn {
+            left: 48px;
+        }
+        &__block-info {
+            left: 48px;
+        }
+        &__block-play {
+            right: 48px;
+        }
+        &__block-list {
+            right: 48px;
+        }
+        &__slide {
+            display: flex;
+            bottom: 22px;
+            left: 14px;
+        }
+    }
+  
+}
+
+@media screen and(max-width:560px) {
+    .header {
+        div.rotator-slide & {
+            &__rotator {
+              
+                &-img {
+                    width: 346px;
+                }
+            }
+        }
+        &__btn {
+            left: 30px;
+        }
+        &__block-play {
+            right: 19px;
+        }
+        &__block-list {
+            right: 27px;
+        }
+        &__block-info {
+            left: 30px;
+            &--title {
+                font-size: 56px;
+                line-height: 64px;
+            }
+        }
+    }
+}

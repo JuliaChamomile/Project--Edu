@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,400;1,700&family=Red+Hat+Text:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="nav">
+    <div class="container">
+        <div class="nav__menu">
+            <div class="logo logo__burger nav__logo--footer">
+                <p class="logo__white">EDU</p>
+            </div>
+            <form class="nav__menu-form">
+                <input type="search" name="address" placeholder="Search courses" class="nav__input input__footer">
+                <input type="search" name="address" placeholder="Search"
+                    class="nav__input nav__input-mobile input__footer">
+                <button name="search" class="nav__menu-form--btn">
+                    <a href="#" class="nav__menu-form--link"><img src="img/icon/search-icon.svg" alt="search"
+                            class="nav__menu-icon"></a> </button>
+            </form>
+            <div class="nav__menu-burger">
+                <button name="burger" class="nav__menu-burger-bt" id="open-menu-btn">
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="burger" id="burger-menu">
+    <div class="container">
+        <div class="burger__nav">
+            <div class="burger__logo">
+                <p class="logo__white burger__logo--purple">EDU</p>
+                <button name="burger" class="burger__but-top" id="close-menu-btn"></button>
+            </div>
+            <div class="burger__blocks">
+                <div class="burger__block">
+                    <div class="burger__block1-theachers">
+                        <img src="img/icon/theachers.svg" alt="theachers" class="burger__block-icon">
+                        <div class="burger__block-title">
+
+                            <h3 class="burger__block-title--text">Best Teachers </h3>
+                            <img src="img/icon/arrow.svg" alt="arrow" class="arrow">
+
+                        </div>
+                        <ul class="burger__block-list">
+                            <li class="burger__block-item">John Dou</li>
+                            <li class="burger__block-item">Mia Cupper</li>
+                            <li class="burger__block-item">Lia Mishel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger__block">
+                    <div class="burger__block2-courses">
+                        <img src="img/icon/courses.svg" alt="courses" class="burger__block-icon">
+                        <div class="burger__block-title">
+
+                            <h3 class="burger__block-title--text">Professional Courses</h3>
+                            <img src="img/icon/arrow.svg" alt="arrow" class="arrow">
+
+                        </div>
+                        <ul class="burger__block-list">
+                            <li class="burger__block-item">Science</li>
+                            <li class="burger__block-item">Design</li>
+                            <li class="burger__block-item">Food</li>
+                            <li class="burger__block-item">Tech</li>
+                            <li class="burger__block-item">Music</li>
+                            <li class="burger__block-item">Medicine</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger__block">
+                    <div class="burger__block3-courses">
+                        <img src="img/icon/onlie.svg" alt="courses" class="burger__block-icon">
+                        <div class="burger__block-title--form">
+
+                            <h3 class="burger__block-title--text">Online Learning</h3>
+                            <img src="img/icon/arrow.svg" alt="arrow" class="arrow">
+
+                        </div>
+                        <div class="burger__form">
+                            <input type="email" name="imail" placeholder="Your email" class="burger__form-input">
+                        </div>
+                        <a href="#"><button type="submit" name="subscribe" class="btn burger__bt">Subscribe</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="burger__decor-left">
+                <img src="img/icon/Combined-pink.svg" alt="">
+            </div>
+            <div class="burger__decor-right">
+                <img src="img/icon/Combined-pink.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <section class="header">
+        <div class="container">
+            <div class="owl-carousel">
+                <div class="rotator-slide">
+                    <div class="header__rotator">
+                        <img class="header__rotator-img" src="img/img/header.png" alt="">
+                    </div>
+                    <div class="header__block">
+                        <div class="header__block-top">
+                            <button class="header__btn courses__card-bt" type="button">Science</button>
+                            <ul class="header__block-list">
+                                <li class="header__block-item">
+                                    <a class="header__block-link" href="#"><img src="img/icon/Fc.svg" alt=""></a>
+                                </li>
+                                <li class="header__block-item">
+                                    <a class="header__block-link" href="#"><img src="img/icon/tw.svg" alt=""></a>
+                                </li>
+                                <li class="header__block-item">
+                                    <a class="header__block-link" href="#"><img src="img/icon/insta.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__block-info">
+                            <h1 class="header__block-info--title">Scientific Methods and Research</h1>
+                            <p class="header__block-info--subtitle">Julian Gruber</p>
+                            <button class="header__block-info--bt">$199</button>
+                        </div>
+                        <div class="header__block-play">
+                            <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=lUdbxJXBuig">
+                                <img src="img/icon/play.svg" alt="play" class="header__block-play--icon"></a>
+                        </div>
+                    </div>
+                    <div class="header__slide">
+                        <div class="header__slide-left">
+                            <img src="img/icon/left.svg" alt="">
+                        </div>
+                        <div class="header__slide-right">
+                            <img src="img/icon/right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header__decor--top">
+                        <img src="img/icon/Combined-blue.svg" alt="">
+                    </div>
+                    <div class="header__decor">
+                        <img src="img/icon/Combined-blue.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="rotator-slide">
+                    <div class="header__rotator">
+                        <img class="header__rotator-img" src="img/img/Medicine.png" alt="">
+                    </div>
+                    <div class="header__block">
+
+                        <button class="header__btn courses__card-bt" type="button">Science</button>
+                        <ul class="header__block-list">
+                            <li class="header__block-item">
+                                <a class="header__block-link" href="#"><img src="img/icon/Fc.svg" alt=""></a>
+                            </li>
+                            <li class="header__block-item">
+                                <a class="header__block-link" href="#"><img src="img/icon/tw.svg" alt=""></a>
+                            </li>
+                            <li class="header__block-item">
+                                <a class="header__block-link" href="#"><img src="img/icon/insta.svg" alt=""></a>
+                            </li>
+                        </ul>
+
+                        <div class="header__block-info">
+                            <h1 class="header__block-info--title">Scientific Methods and Research</h1>
+                            <p class="header__block-info--subtitle">Julian Gruber</p>
+                            <button class="header__block-info--bt">$199</button>
+                        </div>
+                        <div class="header__block-play">
+                            <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=gw2nclcoFNE">
+                                <img src="img/icon/play.svg" alt="play" class="header__block-play--icon"></a>
+                        </div>
+                    </div>
+                    <div class="header__slide">
+                        <div class="header__slide-left">
+                            <img src="img/icon/left.svg" alt="">
+                        </div>
+                        <div class="header__slide-right">
+                            <img src="img/icon/right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header__decor--top">
+                        <img src="img/icon/Combined-blue.svg" alt="">
+                    </div>
+                    <div class="header__decor">
+                        <img src="img/icon/Combined-blue.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="rotator-slide">
+                    <div class="header__rotator">
+                        <img class="header__rotator-img" src="img/img/Music.png" alt="">
+                    </div>
+                    <div class="header__block">
+                        <div class="header__block-top">
+                            <button class="header__btn courses__card-bt" type="button">Science</button>
+                            <ul class="header__block-list">
+                                <li class="header__block-item">
+                                    <a class="header__block-link" href="#"><img src="img/icon/Fc.svg" alt=""></a>
+                                </li>
+                                <li class="header__block-item">
+                                    <a class="header__block-link" href="#"><img src="img/icon/tw.svg" alt=""></a>
+                                </li>
+                                <li class="header__block-item">
+                                    <a class="header__block-link" href="#"><img src="img/icon/insta.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__block-info">
+                            <h1 class="header__block-info--title">Scientific Methods and Research</h1>
+                            <p class="header__block-info--subtitle">Julian Gruber</p>
+                            <button class="header__block-info--bt">$199</button>
+                        </div>
+                        <div class="header__block-play">
+                            <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=tepT4EcBTC0">
+                                <img src="img/icon/play.svg" class="header__block-play--icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__slide">
+                        <div class="header__slide-left">
+                            <img src="img/icon/left.svg" alt="">
+                        </div>
+                        <div class="header__slide-right">
+                            <img src="img/icon/right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header__decor--top">
+                        <img src="/img/icon/Combined-blue.svg" alt="">
+                    </div>
+                    <div class="header__decor">
+                        <img src="img/icon/Combined-blue.svg" alt="">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            nav: true,
+            margin: 10
+        });
+    </script>
+
+        <section class="privilege">
+        <div class="container">
+            <ul class="privilege__list">
+                <li class="privilege__list-item">
+                    <img class="privilege__list-icon" src="img/icon/theacher2.svg" alt="theacher">
+                    <h3 class="privilege__list-title">Best Teachers</h3>
+                    <p class="privilege__list-subtitle">Truly it was a great journey, and in it I met with many, whom to
+                        know.</p>
+                    <div class="privilege__list-nav">
+                        <a href="#" class="privilege__list-link">
+                            <p class="privilege__list-nav--text">Read more</p>
+                            <img src="img/icon/arrow.svg" alt="arrow" class="arrow">
+                        </a>
+                    </div>
+                </li>
+                <li class="privilege__list-item">
+                    <img class="privilege__list-icon" src="img/icon/course2.svg" alt="course">
+                    <h3 class="privilege__list-title">Professional Courses</h3>
+                    <p class="privilege__list-subtitle">Journey, and in it I met with many, whom to know was to love.
+                    </p>
+                    <div class="privilege__list-nav">
+                        <a href="#" class="privilege__list-link">
+                            <p class="privilege__list-nav--text">Read more</p>
+                            <img src="img/icon/arrow.svg" alt="arrow" class="arrow">
+                        </a>
+                    </div>
+                </li>
+                <li class="privilege__list-item">
+                    <img class="privilege__list-icon" src="img/icon/online2.svg" alt="online">
+                    <h3 class="privilege__list-title">Online Learning</h3>
+                    <p class="privilege__list-subtitle">Yet, for all that I have set down, we travelled much, always.
+                    </p>
+                    <div class="privilege__list-nav">
+                        <a href="#" class="privilege__list-link">
+                            <p class="privilege__list-nav--text">Read more</p>
+                            <img src="img/icon/arrow.svg" alt="arrow" class="arrow">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <div class="about__block">
+                <div class="about__block-foto">
+                    <img class="about__block-foto--img" src="img/img/foto-about.png" alt="">
+                </div>
+                <div class="about__block-info">
+                    <p class="title__mini about__block-info--header">About</p>
+                    <h2 class="about__block-info--title">We Are Experts in Elearning</h2>
+                    <p class="about__block-info--subtitle">Distant orb has power</p>
+                    <p class="about__block-info--text">What looked like a small patch of purple grass, above five feet
+                        square, was
+                        moving across the sand in their direction. When it came near enough he perceived.</p>
+                    <a href="#" class="about__block-info--bt"><button type="button"
+                            class="but about__bt">Explore</button></a>
+                </div>
+            </div>
+            <div class="about__decor">
+                <img src="img/icon/Combined-pink.svg" alt="">
+            </div>
+            <div class="about__fon">
+                <img  class="about__fon-img" src="img/img/about-fon.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="courses">
+        <div class="container">
+            <p class="title__mini courses__text">Courses</p>
+            <h2 class="courses__title">Popular Subjects</h2>
+            <ul class="courses__list">
+                <li class="courses__item courses__link courses__item-active">
+                    <a href="#" class="courses__link courses__link-active" data-id="All">All</a>
+                </li>
+                <li class="courses__item">
+                    <a href="#" class="courses__link" data-id="Science">Science</a>
+                </li>
+                <li class="courses__item">
+                    <a href="#" class="courses__link" data-id="Design">Design</a>
+                </li>
+                <li class="courses__item">
+                    <a href="#" class="courses__link" data-id="Food">Food</a>
+                </li>
+                <li class="courses__item">
+                    <a href="#" class="courses__link" data-id="Tech">Tech</a>
+                </li>
+                <li class="courses__item">
+                    <a href="#" class="courses__link" data-id="Music">Music</a>
+                </li>
+                <li class="courses__item">
+                    <a href="#" class="courses__link" data-id="Medicine">Medicine</a>
+                </li>
+            </ul>
+            <ul class="courses__cards">
+                <li class="courses__card">
+                    <img src="img/img/science.png" alt="science" class="courses__card-img">
+                    <div class="courses__card-block">
+                        <h3 class="courses__card-title">Quantum Computers</h3>
+                        <p class="courses__card-subtitle">Ivan Cornejo</p>
+                        <p class="courses__card-text">10 Lessons</p>
+                    </div>
+                    <button class="courses__card-bt" type="button">Science</button>
+                    <button type="button" class="courses__card-btn">$299</button>
+                </li>
+                <li class="courses__card">
+                    <img src="img/img/mechanics.png" alt="science" class="courses__card-img">
+                    <div class="courses__card-block">
+                        <h3 class="courses__card-title">Mechanics</h3>
+                        <p class="courses__card-subtitle">Chikanso Chima</p>
+                        <p class="courses__card-text">10 Lessons</p>
+                    </div>
+                    <button class="courses__card-bt bt__pink" type="button">Design</button>
+                    <button type="button" class="courses__card-btn">$299</button>
+                </li>
+                <li class="courses__card">
+                    <img src="img/img/Neuroscience.png" alt="science" class="courses__card-img">
+                    <div class="courses__card-block">
+                        <h3 class="courses__card-title">Neuroscience</h3>
+                        <p class="courses__card-subtitle">Leonardo Oliveira</p>
+                        <p class="courses__card-text">10 Lessons</p>
+                    </div>
+                    <button class="courses__card-bt bt__lilac" type="button">Food</button>
+                    <button type="button" class="courses__card-btn">$299</button>
+                </li>
+                <li class="courses__card">
+                    <img src="img/img/Tech.png" alt="science" class="courses__card-img">
+                    <div class="courses__card-block">
+                        <h3 class="courses__card-title">Evolution of the Human</h3>
+                        <p class="courses__card-subtitle">Joslin Rodgers</p>
+                        <p class="courses__card-text">10 Lessons</p>
+                    </div>
+                    <button class=" courses__card-bt bt__purple" type="button">Tech</button>
+                    <button type="button" class="courses__card-btn">$299</button>
+                </li>
+                <li class="courses__card">
+                    <img src="img/img/Music.png" alt="science" class="courses__card-img">
+                    <div class="courses__card-block">
+                        <h3 class="courses__card-title">Genetic Models for Animal</h3>
+                        <p class="courses__card-subtitle">Kita Chihoko</p>
+                        <p class="courses__card-text">10 Lessons</p>
+                    </div>
+                    <button class="courses__card-bt bt__green" type="button">Music</button>
+                    <button type="button" class="courses__card-btn">$299</button>
+                </li>
+                <li class="courses__card">
+                    <img src="img/img/Medicine.png" alt="science" class="courses__card-img">
+                    <div class="courses__card-block">
+                        <h3 class="courses__card-title">Catalytic Conversions</h3>
+                        <p class="courses__card-subtitle">Svyatoslav Taushev</p>
+                        <p class="courses__card-text">10 Lessons</p>
+                    </div>
+                    <button class="courses__card-bt bt__violet" type="button">Medicine</button>
+                    <button type="button" class="courses__card-btn">$299</button>
+                </li>
+            </ul>
+            <a href="#" class="courses__bt-link"><button class="but courses__btn" type="submit">Load more</button></a>
+            <div class="courses__decor-top">
+                <img src="img/icon/Combined-pink.svg" alt="">
+            </div>
+            <div class="courses__decor">
+                <img src="img/icon/Combined-pink.svg" alt="">
+            </div>
+        </div>
+    </section>
+  
+
+    
+    <section class="features">
+        <div class="container">
+            <div class="features__block">
+                <div class="features__block-info">
+                    <p class="title__mini features__text">Features</p>
+                    <h2 class="features__block-info--title">Premium Courses</h2>
+                    <p class="features__block-info--subtitle">Lifts the horizon</p>
+                    <p class="features__block-info--text">What looked like a small patch of purple grass, above five
+                        feet square, was moving across the
+                        sand in their direction.</p>
+                    <div class="features__block-info--block">
+                        <img class="features__block-info--icon" src="img/icon/Support.svg" alt="">
+                        <div class="features__block-info--miniblock">
+                            <h3 class="features__block-info--title2">Free Support</h3>
+                            <p class="features__block-info--subtitle2">Truly it was a great journey, and in it I met
+                                with many, whom to know.</p>
+                        </div>
+                    </div>
+                    <div class="features__block-info--block">
+                        <img class="features__block-info--icon" src="img/icon/Bonuses.svg" alt="">
+                        <div class="features__block-info--miniblock">
+                            <h3 class="features__block-info--title2">Big Bonuses</h3>
+                            <p class="features__block-info--subtitle2">Truly it was a great journey, and in it I met
+                                with
+                                many, whom to know.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features__block-foto">
+                    <img class="features__block-foto--img" src="img/img/features-foto.png" alt="">
+                </div>
+            </div>
+            <img class="features__fon" src="img/img/about-fon.png" alt="">
+            <div class="features__decor">
+                <img src="img/icon/Combined-pink.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__info-block1">
+                    <p class="logo__white footer__logo">EDU</p>
+                    <p class="footer__info-text">Car seemed to float in the middle of an immense dark sphere,
+                        whose upper.</p>
+                    <ul class="footer__info-block1--list">
+                        <li class="footer__info-block1--item"><a class="footer__info-link" href="#"><img
+                                    class="footer__info-icon" src="img/icon/Fc.svg" alt=""></a></li>
+                        <li class="footer__info-block1--item"><a class="footer__info-link" href="#"><img
+                                    class="footer__info-icon" src="img/icon/tw.svg" alt=""></a></li>
+                        <li class="footer__info-block1--item"><a class="footer__info-link" href="#"><img
+                                    class="footer__info-icon" src="img/icon/insta.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer__info-block2">
+                    <div class="footer__info-block2--popular">
+                        <h3 class="footer__info-title">Popular Courses</h3>
+                        <ul class="footer__info-block2--list">
+                            <a class="footer__info-block2--link" href="#">
+                                <li class="footer__info-block2--item">Digital Ecosystem Infrastructure</li>
+                            </a>
+                            <a class="footer__info-block2--link" href="#">
+                                <li class="footer__info-block2--item">Nutrition, Exercise and Sports</li>
+                            </a>
+                            <a class="footer__info-block2--link" href="#">
+                                <li class="footer__info-block2--item">Leadership and Influence</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer__info-block3">
+                        <h3 class="footer__info-title">Newsletter</h3>
+                        <div class="footer__info-block3--form">
+                            <div class="footer__info-block3--mail">
+                            <input class="footer__info-block3--input" type="email" id="mail" name="user_mail"
+                                placeholder="Your email"></div>
+                            <a href="#"><button class="footer__info-block3--bt" type="submit">Subscribe</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__footer">
+                <a href="#" class="footer__footer-link1">
+                    <p class="footer__footer-copyright">Copyright © 2022 Lectrum LLC. All Rights Reserved.</p>
+                </a>
+                <div class="footer__footer-block">
+                    <a href="#" class="footer__footer-link">
+                        <p class="footer__footer-link--text">Terms of Conditions</p>
+                    </a>
+                    <a href="#" class="footer__footer-link">
+                        <p class="footer__footer-link--text">Privacy Policy</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>  <script src="/app/js/burger.js"></script>
+    <script src="/app/js/courses.js"></script>
+    <script src="/app/js/owl-carousel.js"></script>
+    <script src="/app/js/burger.js"></script>
+</body>
+
+</html>

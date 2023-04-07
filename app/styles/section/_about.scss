@@ -1,0 +1,143 @@
+.about {
+    position: relative;
+    overflow: hidden;
+
+    &__fon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 340px;
+        z-index: -2;
+        height: 100%;
+            &-img {
+                height: 100%;
+        }
+    }
+    &__decor {
+        position: absolute;
+        top: 193px;
+        right: 168px;
+        z-index: -1;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        &-foto {
+            padding-top: 160px;
+            margin-bottom: 160px;
+            margin-right: 130px;
+            &--img {
+                width: 570px;
+                height: 560px;
+            }
+        }
+        &-info {
+            padding-top: 218px;
+
+            &--header {
+                margin-bottom: 18px;
+                text-transform: uppercase;
+                @include section-text($font-title, bold, 16px, 32px, none, $main-black, left)
+            }
+            &--title {
+                margin-bottom: 28px;
+                @include section-text( $font-title, bold, 56px, 64px, none, $main-black, left)
+            }
+
+           &--subtitle {
+            margin-bottom: 34px;
+            @include section-text($font-subtitle, normal, 22px, 32px, none, $main-black, left)
+           }
+           &--text {
+               width: 90%;
+               margin-bottom: 32px;
+               @include section-text($font-subtitle, normal, 18px, 32px, none, $main-rgb, left)
+           }
+        }
+    }
+    &__bt {
+        mix-blend-mode: normal;
+        border-radius: 24px;
+        padding: 12px 50px; 
+        border: 1px solid $main-purple;
+
+        &:hover {
+            opacity: 0.5;
+            transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+            transform: scale(1.1);
+        }
+
+        @include section-text($font-subtitle, bold, 18px, 24px, none, $main-purple, center) 
+
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .about {
+        &__block-info--title {
+            font-size: 40px;
+            line-height: 48px;
+        }
+        &__block-foto {
+            margin-right: 20px;
+
+            &--img {
+                width: 475px;  
+            }
+        }
+        &__decor {
+            right: 9px;
+        }
+    }
+}
+
+@media screen and(max-width:870px) {
+    .about {
+        &__block-foto {
+            margin-right: 85px;
+            &--img {
+                width: 360px;  
+            }
+        }
+        &__decor {
+            right: -45px;
+        }
+        &__fon {
+            left: 0;
+            top: 190px;
+        }
+        &__decor {
+            right: -76px;
+            top: 460px;
+        }
+        &__bt {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media screen and(max-width:560px) {
+    .about {
+        &__block{
+        display: block;
+            &-info{
+                padding-top: unset;
+                &--title {
+                    margin-bottom: 30px;
+                }
+                &--text {
+                    margin-bottom: 23px;
+                }
+            }
+            &-foto{
+                padding-top: 80px;
+                margin-bottom: 54px;
+            &--img {
+                width: 346px;
+                height: 340px;
+                }
+            }
+        }
+    }
+}

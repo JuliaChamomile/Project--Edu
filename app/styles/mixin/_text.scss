@@ -1,0 +1,10 @@
+@mixin section-text($fm, $fw, $fs, $lh, $ls, $color, $ta) {
+    font-family: $fm;
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $color;
+    text-align: $ta;
+}

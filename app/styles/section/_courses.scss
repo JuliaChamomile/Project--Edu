@@ -1,0 +1,249 @@
+.courses {
+    overflow: hidden;
+    position: relative;
+    &__text {
+        display: flex;
+        justify-content: center;
+        padding-top: 74px;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        @include section-text($font-title, bold, 16px, 32px, none, $main-black, center)
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 52px;
+        @include section-text($font-title, bold, 56px, 64px, none, $main-black, center) 
+    }
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-top: 8px;
+        &:hover {
+            opacity: 0.5;
+            transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+            transform: scale(1.1)
+        }
+    }
+    &__list {
+        display: flex;
+        margin-bottom: 64px;
+        background: $main-lightpurple;
+        border-radius: 24px;
+        list-style-type: none;
+        width: 640px;
+        height: 48px;
+        margin: 0 auto;
+        
+        }
+        &__item {
+            margin-right: 35px;
+            @include section-text($font-subtitle, normal, 18px, 32px, none, $main-black, center);
+
+            &-active {
+                background-color: #cfccf8;
+                mix-blend-mode: normal;
+                border-radius: 24px;
+                padding: 12px 27px;
+        
+                @include section-text($font-subtitle, bold, 18px, 24px, none, $main-purple, center)
+            }
+        }
+        &__cards {
+            margin-top: 64px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 30px;
+            row-gap: 32px;
+            justify-content: center;
+            margin-bottom: 80px; 
+        }
+        &__card {
+            display: block;
+            background-color: $main-lightpurple;
+            border-radius: 20px;
+            width: 370px;
+            height: 480px;
+            position: relative;
+            &-img {
+                width: 370px;
+                height: 304px;
+                margin-bottom: 23px;
+            }
+            &-block {
+                padding-left: 32px;
+               
+            }
+            &-title {
+                margin-bottom: 6px;
+                @include section-text($font-title, bold, 24px, 32px, none, $main-black, left)
+            }
+            &-subtitle {
+                margin-bottom: 16px;
+                @include section-text($font-subtitle, normal, 18px, 32px, none, $main-black, left)
+            }
+            &-text {
+               @include section-text($font-subtitle, normal, 18px, 32px, none, $main-rgb, left) 
+
+            }
+            &-btn {
+                position: absolute;
+                bottom: 32px;
+                right: 32px;
+                border-radius: 24px;
+                background-color: $main-green;
+                padding: 12px 23px;
+                @include section-text($font-subtitle, bold, 18px, 24px, none, $main-white, center) 
+            }
+            &-bt {
+                position: absolute;
+                top: 36px;
+                left: 32px;
+                border-radius: 24px;
+                background-color: $main-blue;
+                padding-left: 13px;
+                padding-right: 13px;
+                text-transform: uppercase;
+                @include section-text($font-title, bold, 16px, 32px, none, $main-white, center) 
+            }
+
+        }
+        
+         &__bt-link {
+             text-decoration: none;
+         }
+        
+        &__btn {
+            display: flex;
+            margin: 0 auto;
+            padding: 12px 38px;
+            border-radius: 24px;
+            margin-bottom: 80px;
+            &:hover {
+                opacity: 0.5;
+                transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+                transform: scale(1.1)
+            }
+            @include section-text($font-subtitle, bold, 18px, 24px, none, $main-purple, center) 
+        }
+        &__decor {
+            position: absolute;
+            top: 395px;
+            left: 68px;
+            z-index: -1;
+
+            &-top {
+                position: absolute;
+                bottom: 256px;
+                right: 67px;
+                z-index: -1;
+            }
+        }
+}
+
+.bt {
+    &__pink{
+        background-color: $main-pink;
+    }
+    &__lilac {
+        background-color: #9177F5;
+    }
+    &__purple {
+        background-color: #5C4CEB;
+    }
+    &__green {
+        background-color: $main-green;
+    }
+    &__violet {
+        background-color: #603DBB;
+    }
+}
+
+
+
+@media screen and(max-width:1200px) {
+    .courses {
+        &__cards {
+            column-gap: 20px;
+        }
+        &__card {
+            width: 310px;
+            &-block {
+                padding-left: 25px;
+               
+            }
+            &-img {
+                width: 310px;
+            }
+        }
+        &__decor {
+            left: -135px;
+                &-top {
+                   right: -135px; 
+                }
+        }
+    }
+}
+
+@media screen and(max-width:870px) {
+    .courses {
+        &__title {
+            font-size: 40px;
+            line-height: 64px;
+        }
+        &__cards {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        &__card {
+            width: 360px;
+            &-img {
+                width: 360px;
+            }
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:560px) {
+    .courses {
+        &__text {
+            margin-bottom: 16px;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 38px;
+        }
+        &__list {
+            margin-bottom: 48px;
+            margin-left: 14px;
+            overflow-x: scroll;
+            width: 100%;
+        }
+        &__cards {
+            display: block;
+            margin-bottom: 48px;
+        }
+        &__card {
+            width: 346px;
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &-img {
+                width: 346px;
+            }
+        }
+        &__decor-top {
+            display: none;
+        }
+    }
+}

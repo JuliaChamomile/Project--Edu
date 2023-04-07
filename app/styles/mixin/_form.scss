@@ -1,0 +1,7 @@
+@mixin section-input($bac, $br, $pd) {
+    background: $bac;
+    border: $br;
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: $pd;
+}

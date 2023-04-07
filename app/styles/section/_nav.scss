@@ -1,0 +1,273 @@
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    background-color: $main-purple;
+    z-index: 1;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 48px;
+        &-burger{
+            margin-left: 252px;
+        }
+        &-form--btn {
+            position: absolute;
+            top: 0;
+            right: -8px;
+            border-radius: 60px 60px;
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    &__menu-form {
+        position: relative;
+        width: 100%;
+    }
+
+    &__menu-burger-bt {
+        border-radius: 60px 60px;
+        width: 48px;
+        height: 48px;
+        background: url(../img/icon/burger-menu.svg);
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+            transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+            transform: scale(1.1)
+        }
+    }
+
+        &__input-mobile {
+            display: none;
+        }
+
+    &__input {
+        width: 100%;
+        @include section-input($main-white, 1px solid #DADADA, 7px 24px 7px 24px);
+        @include section-text($font-title, normal, 18px, 32px, none, $main-rgb, none)
+    }
+}
+
+.logo__white {
+    margin-right: 215px;
+    @include logo($main-white)
+}
+.burger {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    background-color: $main-lightpurple;
+    z-index: 1;
+    &__active {
+        display: block;
+        z-index: 1;
+    }
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        padding-left: 14px;
+    }
+    &__but-top {
+        border-radius: 60px 60px;
+        width: 48px;
+        height: 48px;
+        background: url(../img/icon/burger.svg);
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+            transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+            transform: scale(1.1)
+        }
+    }
+    &__logo--purple {
+        z-index: 1;
+        margin-bottom: 21px;
+        color: $main-purple;
+        }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 18px;
+        padding-right: 24px;
+        padding-bottom: 106px;
+    }
+    &__block {
+        z-index: 1;
+    }
+    &__block-icon {
+        margin-bottom: 47px;
+    }
+    &__block-title {
+        display: flex;
+        margin-bottom: 19px;
+        text-decoration: none;
+        
+        &--form {
+            display: flex;
+            margin-bottom: 102px;
+        }
+        &--text {
+            margin-right: 18px;
+            @include section-text($font-title, bold, 24px, 32px, none, $main-black, left); 
+        }
+    }
+    &__block-list {
+        list-style-type: none;
+    }
+    &__block-item {
+        margin-bottom: 8px;
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @include section-text($font-subtitle, normal, 18px, 32px, none, $main-rgb, left);
+        &:hover {
+            opacity: 0.5;
+            transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+            transform: scale(1.1)
+        }
+    }
+    &__decor-left {
+        position: absolute;
+        top: 67px;
+        left: -88px;
+    }
+    &__decor-right {
+        position: absolute;
+        bottom: -70px;
+        right: 29px;
+    }
+    &__form {
+        margin-bottom: 16px;
+        &-input {
+            width: 230px;
+            background-color: $main-white;
+            padding: 8px 0 8px 24px;
+            border-radius: 24px;
+            border: 1px solid #DADADA;
+            @include section-text($font-subtitle, normal, 18px, 32px, none, $main-rgb, left) 
+        }
+
+    }
+    &__bt {
+        background: $main-green;
+        border-radius: 24px;
+        padding: 12px 40px;
+        cursor: pointer;
+        @include section-text($font-subtitle, normal, 18px, 24px, none, $main-white, center);
+        &:hover {
+            opacity: 0.5;
+            transition: height 1s cubic-bezier(.37,-0.39,.18,1.29);
+            transform: scale(1.1)
+        }
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .nav {
+       &__menu {
+           width: 100%;
+           &-burger {
+               margin-left: 115px;
+           }
+       } 
+    }
+    .burger {
+        &__decor-left {
+            display: none;
+        }
+        &__decor-right {
+            right: 16px;
+            bottom: -103px;
+        }
+    }
+    .logo__white {
+        margin-right: 115px;
+    }
+}
+
+@media screen and(max-width:870px) {
+    .nav {
+        &__menu {
+            width: 100%;
+            &-form{
+                width: 100%;
+            }
+            &-burger{
+                margin-left: 97px;
+            }
+        } 
+        &__input {
+            @include section-input($main-white, 1px solid #DADADA, 7px 24px 7px 24px);
+        }
+    }
+    .burger {
+        &__logo {
+            padding-left: 16px;
+        }
+        &__blocks {
+            padding-left: 6px;
+            padding-right: 14px;
+        }
+        &__block-title--form {
+            margin-bottom: 54px;
+        }
+        &__decor-right {
+            display: none;
+        }
+    }
+    .arrow {
+        display: none;
+    }
+    .logo__white {
+        margin-right: 60px;
+    }
+}
+
+
+@media screen and(max-width:560px) {
+    .nav {
+        &__menu {
+            width: 100%;
+          &-form{
+            width: 100%;
+          }
+          &-burger{
+              margin-left: 11px;
+          }
+        } 
+        &__input {
+            width: 100%;
+        }
+    }
+    .logo__white {
+        margin-right: 12px;
+    }
+    .burger {
+        
+        &__blocks {
+            display: block;
+        }
+        &__block-icon {
+            display: none;
+        }
+        &__block {
+        margin-bottom: 22px;
+        }
+        &__logo {
+            padding-left: 12px;
+            padding-right: 6px;
+        }
+    }
+}
+

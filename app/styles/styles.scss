@@ -1,0 +1,40 @@
+@import './var/index';
+@import './mixin/index';
+@import './section/index';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  
+  .container{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+  
+}
+
+@media screen and(max-width:1200px){
+    .container{
+      width: calc(100% - 54px);
+      margin: 0 auto;
+  }
+}
+ 
+  @media screen and(max-width:870px){
+    .container{
+      width: calc(100% - 28px);
+      margin: 0 auto;
+  }
+}
+
+
+  @media screen and(max-width:560px){
+    .container{
+     width: calc(100% - 28px);
+      margin: 0 auto;
+  }
+}
